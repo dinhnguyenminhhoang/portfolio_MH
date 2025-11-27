@@ -4,46 +4,32 @@ import { useState } from 'react'
 
 const experiences = [
   {
-    year: '2024',
-    role: 'Intern Full-Stack Developer',
-    company: 'AI Residency FPT Software',
-    type: 'Internship',
-    description: 'Developed AI-powered applications and worked on machine learning integration projects during the AI Residency program.',
-    achievements: [
-      'Built full-stack applications using React and Node.js',
-      'Integrated AI/ML models into web platforms',
-      'Collaborated with senior developers on production projects',
-      'Learned best practices in software development'
-    ],
-    tech: ['React', 'Node.js', 'AI/ML', 'Python']
-  },
-  {
-    year: '2024',
-    role: 'Intern Full-Stack Developer',
+    year: '2025',
+    role: 'Frontend Engineer Intern',
     company: 'AFFINA',
     type: 'Internship',
-    description: 'Contributed to insurance management platform development with focus on frontend and backend integration.',
+    description: 'Building frontend features using React, Next.js, and Material UI. Developing reusable UI components and implementing responsive layouts.',
     achievements: [
-      'Developed features for insurance management system',
-      'Worked with React and Node.js tech stack',
-      'Implemented RESTful APIs and database queries',
-      'Participated in code reviews and team meetings'
+      'Built frontend features using React, Next.js, Material UI (MUI), Zustand, React Query, and Redux',
+      'Developed reusable UI components and implemented responsive, accessible layouts',
+      'Integrated API data fetching with React Query, improving performance and reducing redundant calls',
+      'Collaborated with product/design teams to deliver pixel-perfect UI and enhance user experience'
     ],
-    tech: ['React', 'Node.js', 'MongoDB', 'Express']
+    tech: ['React', 'Next.js', 'Material UI', 'Zustand', 'React Query', 'Redux']
   },
   {
-    year: '2021-2025',
+    year: '2021',
     role: 'Software Engineering Student',
-    company: 'FPT Can Tho University',
+    company: 'University of Transport and Communications - HCM',
     type: 'Education',
-    description: 'Pursuing Bachelor\'s degree in Software Engineering with focus on full-stack web and mobile development.',
+    description: 'Pursuing degree in Computer Science with focus on web development, UI/UX design, and modern frontend technologies.',
     achievements: [
-      'Built multiple full-stack projects including Nova Fashion',
-      'Developed V-Booking reservation system',
-      'Created React Native mobile applications',
-      'Maintained strong academic performance'
+      'Built full-stack e-commerce platform (Nova Fashion) with React, Vite, and Node.js',
+      'Developed AFFINA FE Website & Portal using Next.js and modern libraries',
+      'Created AI-powered tools: Spell Check (LLM), VocaSumAI Extension, Speech to Text',
+      'Earned Google UX Design and Cybersecurity Professional certificates'
     ],
-    tech: ['React', 'React Native', 'MongoDB', 'PostgreSQL']
+    tech: ['React', 'Next.js', 'TypeScript', 'Node.js', 'MongoDB']
   }
 ]
 
@@ -147,19 +133,24 @@ export default function Experience() {
         {/* Education Section */}
         <div className="mt-20">
           <h3 className="text-3xl font-bold text-center mb-10 gradient-text">
-            Education
+            Education & Certifications
           </h3>
-          <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <div className="glass rounded-2xl p-8 hover:glow-box transition-all magnetic">
               <div className="text-4xl mb-4">🎓</div>
-              <h4 className="text-xl font-bold mb-2">Bachelor's Degree in Software Engineering</h4>
-              <p className="text-gray-400 mb-2">FPT Can Tho University</p>
-              <p className="text-sm text-gray-500">2021 - 2025 (Expected)</p>
-              <div className="mt-4 space-y-2">
-                <p className="text-gray-400 text-sm">• Focus on Full-Stack Development</p>
-                <p className="text-gray-400 text-sm">• Web & Mobile Application Development</p>
-                <p className="text-gray-400 text-sm">• Database Management Systems</p>
-              </div>
+              <h4 className="text-xl font-bold mb-2">Computer Science</h4>
+              <p className="text-gray-400 mb-2">University of Transport and Communications</p>
+              <p className="text-sm text-gray-500 mb-4">Campus in Ho Chi Minh City</p>
+              <p className="text-sm text-gray-500">2021 - Present</p>
+            </div>
+
+            <div className="glass rounded-2xl p-8 hover:glow-box transition-all magnetic">
+              <div className="text-4xl mb-4">📜</div>
+              <h4 className="text-xl font-bold mb-2">Certifications</h4>
+              <ul className="text-gray-400 text-sm space-y-1">
+                <li>• Foundations of User Experience (UX) Design</li>
+                <li>• Google Cybersecurity Professional Certificate</li>
+              </ul>
             </div>
           </div>
         </div>

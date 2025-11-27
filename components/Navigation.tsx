@@ -103,7 +103,7 @@ export default function Navigation() {
             <span>Resume</span>
           </a>
           <a
-            href="mailto:dinhnguyenminhhoang@gmail.com"
+            href="mailto:minhhoang.detdev@gmail.com"
             className="px-6 py-2 neon-border rounded-full text-sm font-medium hover:glow-box transition-all magnetic"
           >
             Hire Me
@@ -156,7 +156,7 @@ export default function Navigation() {
               <span>Download Resume</span>
             </a>
             <a
-              href="mailto:dinhnguyenminhhoang@gmail.com"
+              href="mailto:minhhoang.detdev@gmail.com"
               className="w-full py-3 bg-gradient-to-r from-primary to-secondary rounded-full text-center font-medium hover:shadow-2xl hover:shadow-primary/50 transition-all"
             >
               Hire Me

@@ -59,19 +59,19 @@ export default function Contact() {
     {
       icon: '📧',
       label: 'Email',
-      value: 'dinhnguyenminhhoang@gmail.com',
-      link: 'mailto:dinhnguyenminhhoang@gmail.com'
+      value: 'minhhoang.detdev@gmail.com',
+      link: 'mailto:minhhoang.detdev@gmail.com'
     },
     {
       icon: '📱',
       label: 'Phone',
-      value: '+84 868 831 931',
-      link: 'tel:+84868831931'
+      value: '+843337923340',
+      link: 'tel:+843337923340'
     },
     {
       icon: '📍',
       label: 'Location',
-      value: 'Cần Thơ City, Vietnam',
+      value: 'Thủ Đức, Hồ Chí Minh, Vietnam',
       link: '#'
     },
     {
@@ -315,9 +315,6 @@ export default function Contact() {
         <div className="mt-20 pt-8 border-t border-gray-800 text-center">
           <p className="text-gray-400 mb-4">
             Designed & Built by <span className="gradient-text font-semibold">Minh Hoàng</span>
-          </p>
-          <p className="text-sm text-gray-500">
-            © 2024 All rights reserved. Made with ❤️ and ☕
           </p>
         </div>
       </div>

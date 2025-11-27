@@ -153,8 +153,8 @@ export default function CyberpunkHero() {
         {/* Stats Display */}
         <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mb-12">
           {[
-            { value: "03+", label: "YEARS_XP", icon: "⚡" },
-            { value: "50+", label: "PROJECTS", icon: "🚀" },
+            { value: "01+", label: "YEARS_XP", icon: "⚡" },
+            { value: "30+", label: "PROJECTS", icon: "🚀" },
             { value: "95%", label: "SUCCESS_RATE", icon: "🎯" },
           ].map((stat, index) => (
             <div
@@ -174,7 +174,10 @@ export default function CyberpunkHero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap gap-6 justify-center">
-          <button className="group relative px-8 py-4 neon-border rounded-xl font-mono overflow-hidden">
+          <button
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            className="group relative px-8 py-4 neon-border rounded-xl font-mono overflow-hidden"
+          >
             <span className="relative z-10 flex items-center gap-2">
               <span>{">"}</span>
               <span>INITIALIZE_PROJECT</span>
@@ -183,13 +186,17 @@ export default function CyberpunkHero() {
             <div className="absolute inset-0 border-2 border-primary animate-pulse opacity-0 group-hover:opacity-100" />
           </button>
 
-          <button className="group relative px-8 py-4 bg-gradient-to-r from-primary via-secondary to-accent rounded-xl font-mono overflow-hidden hover:shadow-2xl hover:shadow-primary/50 transition-all">
+          <a
+            href="/resume.pdf"
+            download="MinhHoang_CV.pdf"
+            className="group relative px-8 py-4 bg-gradient-to-r from-primary via-secondary to-accent rounded-xl font-mono overflow-hidden hover:shadow-2xl hover:shadow-primary/50 transition-all inline-block"
+          >
             <span className="relative z-10 flex items-center gap-2">
               <span>{">"}</span>
               <span>DOWNLOAD_CV.exe</span>
             </span>
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity" />
-          </button>
+          </a>
         </div>
 
         {/* Terminal prompt */}

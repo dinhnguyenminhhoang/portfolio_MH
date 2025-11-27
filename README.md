@@ -178,7 +178,7 @@ MIT License - feel free to use this portfolio as a template for your own!
 **Đinh Nguyễn Minh Hoàng**
 - GitHub: [@dinhnguyenminhhoang](https://github.com/dinhnguyenminhhoang)
 - LinkedIn: [Minh Hoàng](https://www.linkedin.com/in/dinhnguyenminhhoang)
-- Email: dinhnguyenminhhoang@gmail.com
+- Email: minhhoang.detdev@gmail.com
 
 ## 🙏 Acknowledgments
 

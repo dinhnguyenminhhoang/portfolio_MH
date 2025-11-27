@@ -50,27 +50,27 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-400 text-lg leading-relaxed">
                 <p>
-                  I'm a <span className="text-primary font-semibold">Software Engineering student</span> at
-                  FPT Can Tho University, passionate about full-stack development. Currently in my final year,
-                  graduating in 2025.
+                  I'm a <span className="text-primary font-semibold">Frontend Engineer</span> currently
+                  studying at University of Transport and Communications - HCM Campus. Graduating in 2025,
+                  with strong experience in building scalable web and mobile applications.
                 </p>
                 <p>
                   Specializing in <span className="text-secondary font-semibold">React</span>,
-                  <span className="text-accent font-semibold"> React Native</span>, and
-                  <span className="text-primary font-semibold"> Node.js</span>, I build modern web and mobile
-                  applications. I have hands-on experience from internships at AFFINA and FPT Software AI Residency.
+                  <span className="text-accent font-semibold"> Next.js</span>, and
+                  <span className="text-primary font-semibold"> React Native</span>, I create high-performance
+                  applications with focus on UI/UX excellence and code quality.
                 </p>
                 <p>
-                  My projects include e-commerce platforms like <span className="text-primary font-semibold">Nova Fashion</span>,
-                  booking systems like <span className="text-secondary font-semibold">V-Booking</span>,
-                  and insurance management platforms. I'm always eager to learn new technologies and tackle challenging problems.
+                  My experience includes building e-commerce platforms like <span className="text-primary font-semibold">Nova Fashion</span>,
+                  developing the <span className="text-secondary font-semibold">AFFINA Frontend</span>,
+                  and creating AI-powered tools. I'm passionate about performance optimization and modern web technologies.
                 </p>
               </div>
             </div>
 
             {/* Skills Preview */}
             <div className="flex flex-wrap gap-3">
-              {['React', 'React Native', 'TypeScript', 'Node.js', 'MongoDB', 'PostgreSQL'].map((skill) => (
+              {['React', 'Next.js', 'TypeScript', 'Material UI', 'TailwindCSS', 'Redux'].map((skill) => (
                 <span
                   key={skill}
                   className="px-4 py-2 neon-border rounded-full text-sm font-medium hover:glow-box transition-all cursor-default"

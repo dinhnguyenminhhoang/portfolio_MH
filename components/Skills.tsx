@@ -19,45 +19,47 @@ const skillCategories = [
     icon: '🎨',
     color: 'from-blue-500 to-cyan-500',
     skills: [
-      { name: 'React', level: 'ADVANCED' as SkillLevel },
-      { name: 'React Native', level: 'ADVANCED' as SkillLevel },
-      { name: 'TypeScript', level: 'INTERMEDIATE' as SkillLevel },
-      { name: 'TailwindCSS', level: 'ADVANCED' as SkillLevel },
-      { name: 'HTML/CSS', level: 'EXPERT' as SkillLevel },
+      { name: 'React', level: 'EXPERT' as SkillLevel },
+      { name: 'Next.js', level: 'ADVANCED' as SkillLevel },
+      { name: 'TypeScript', level: 'ADVANCED' as SkillLevel },
+      { name: 'Material UI', level: 'ADVANCED' as SkillLevel },
+      { name: 'TailwindCSS', level: 'EXPERT' as SkillLevel },
+      { name: 'Redux Toolkit', level: 'ADVANCED' as SkillLevel },
     ]
   },
   {
-    title: 'Backend',
+    title: 'Backend & Database',
     icon: '⚙️',
     color: 'from-green-500 to-emerald-500',
     skills: [
       { name: 'Node.js', level: 'ADVANCED' as SkillLevel },
-      { name: 'Express', level: 'ADVANCED' as SkillLevel },
+      { name: 'RESTful API', level: 'EXPERT' as SkillLevel },
       { name: 'MongoDB', level: 'ADVANCED' as SkillLevel },
-      { name: 'PostgreSQL', level: 'INTERMEDIATE' as SkillLevel },
-      { name: 'REST API', level: 'ADVANCED' as SkillLevel },
+      { name: 'MySQL', level: 'INTERMEDIATE' as SkillLevel },
+      { name: 'Redis', level: 'INTERMEDIATE' as SkillLevel },
     ]
   },
   {
-    title: 'Mobile',
-    icon: '📱',
+    title: 'Cloud & DevOps',
+    icon: '☁️',
     color: 'from-purple-500 to-pink-500',
     skills: [
-      { name: 'React Native', level: 'ADVANCED' as SkillLevel },
-      { name: 'Expo', level: 'INTERMEDIATE' as SkillLevel },
-      { name: 'Mobile UI/UX', level: 'ADVANCED' as SkillLevel },
-      { name: 'Cross-Platform', level: 'ADVANCED' as SkillLevel },
+      { name: 'Firebase', level: 'ADVANCED' as SkillLevel },
+      { name: 'Google Cloud (GCP)', level: 'INTERMEDIATE' as SkillLevel },
+      { name: 'AWS (S3, Lambda)', level: 'INTERMEDIATE' as SkillLevel },
+      { name: 'Vercel', level: 'ADVANCED' as SkillLevel },
+      { name: 'OAuth 2.0', level: 'ADVANCED' as SkillLevel },
     ]
   },
   {
-    title: 'Tools & Others',
-    icon: '🛠️',
+    title: 'Mobile & Performance',
+    icon: '🚀',
     color: 'from-orange-500 to-red-500',
     skills: [
-      { name: 'Git/GitHub', level: 'ADVANCED' as SkillLevel },
-      { name: 'Docker', level: 'INTERMEDIATE' as SkillLevel },
-      { name: 'Firebase', level: 'INTERMEDIATE' as SkillLevel },
-      { name: 'JWT Auth', level: 'ADVANCED' as SkillLevel },
+      { name: 'React Native', level: 'ADVANCED' as SkillLevel },
+      { name: 'Code Splitting', level: 'EXPERT' as SkillLevel },
+      { name: 'Lazy Loading', level: 'EXPERT' as SkillLevel },
+      { name: 'Web Vitals', level: 'ADVANCED' as SkillLevel },
     ]
   }
 ]
@@ -167,8 +169,8 @@ export default function Skills() {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Git', 'GitHub', 'Postman', 'Docker',
-              'Figma', 'Firebase', 'VS Code', 'Vercel'
+              'Git', 'GitHub', 'Vite', 'Postman', 'Zustand',
+              'React Query', 'Styled Components', 'WebSocket', 'Linux'
             ].map((tool) => (
               <div
                 key={tool}

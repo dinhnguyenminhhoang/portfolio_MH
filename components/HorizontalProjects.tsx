@@ -5,57 +5,83 @@ import { useEffect, useRef, useState } from 'react'
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Marketplace',
-    category: 'Full-Stack',
-    description: 'A complete marketplace platform with payment integration, real-time updates, and admin dashboard. Serving 10K+ monthly users.',
-    tech: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'Socket.io'],
+    title: 'Nova Fashion',
+    category: 'E-Commerce',
+    description: 'Full-stack e-commerce platform with React, Vite, Ant Design, TailwindCSS on frontend and Node.js, Express, MongoDB on backend. Features product filtering, cart, wishlist, authentication, and secure user/session.',
+    tech: ['React', 'Vite', 'Ant Design', 'TailwindCSS', 'Node.js', 'Express', 'MongoDB'],
     image: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    stats: { users: '10K+', rating: '4.8/5', projects: '50+' }
+    stats: { features: '20+', tech: '7', type: 'Full-Stack' },
+    link: 'https://github.com/dinhnguyenminhhoang'
   },
   {
     id: 2,
-    title: 'AI Text Correction',
-    category: 'AI/ML',
-    description: 'Vietnamese spelling & grammar correction using T5/FLAN-T5 models with LoRA fine-tuning. Processing large datasets with 4GB GPU optimization.',
-    tech: ['Python', 'TensorFlow', 'Transformers', 'LoRA', 'FastAPI'],
-    image: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-    stats: { accuracy: '95%', dataset: '1M+', speed: '100ms' }
+    title: 'Phone Store E-Commerce',
+    category: 'E-Commerce',
+    description: 'E-commerce website for mobile phone sales built with React (Vite) frontend and C# .NET backend with SQL Server database. Features product catalog, shopping cart, order management, and admin dashboard.',
+    tech: ['React', 'Vite', 'C#', '.NET', 'SQL Server', 'RESTful API'],
+    image: 'linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)',
+    stats: { products: '100+', admin: 'Full', database: 'SQL' },
+    link: 'https://github.com/dinhnguyenminhhoang'
   },
   {
     id: 3,
-    title: 'Mobile E-Commerce Apps',
-    category: 'Mobile',
-    description: 'Cross-platform mobile applications for flower shop and clothing store with cart management, order tracking, and push notifications.',
-    tech: ['React Native', 'Expo', 'Redux', 'Firebase'],
-    image: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-    stats: { downloads: '5K+', rating: '4.7/5', features: '30+' }
+    title: 'UTC2-Calendar-Extension',
+    category: 'Browser Extension',
+    description: 'Chrome extension for UTC2 students with calendar management and schedule tracking. Integrates with Google Classroom APIs for seamless class schedule synchronization and task management.',
+    tech: ['JavaScript', 'Chrome APIs', 'Google Calendar API', 'Google Classroom', 'React'],
+    image: 'linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%)',
+    stats: { users: '1K+', sync: 'Real-time', features: '8+' },
+    link: 'https://github.com/dinhnguyenminhhoang'
   },
   {
     id: 4,
-    title: 'E-Learning Platform',
-    category: 'Web App',
-    description: 'Comprehensive learning management system with progress tracking, interactive admin panel, and user onboarding flow.',
-    tech: ['React', 'Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
-    image: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-    stats: { students: '2K+', courses: '50+', completion: '85%' }
+    title: 'AFFINA - FE Website & Portal',
+    category: 'Frontend',
+    description: 'Developed AFFINA Website (Next.js + Vite) and Internal Portal (React) using modern FE libraries including Zustand, Material UI, React Query, and custom UI components. Implemented responsive layouts, state management, and optimized FE performance.',
+    tech: ['Next.js', 'Vite', 'React', 'Material UI', 'Zustand', 'React Query'],
+    image: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+    stats: { components: '50+', pages: '15+', optimization: 'High' },
+    link: 'https://github.com/dinhnguyenminhhoang'
   },
   {
     id: 5,
-    title: 'Chrome Extensions Suite',
+    title: 'VocaSumAI Extension',
     category: 'Browser Extension',
-    description: 'Productivity tools for Vietnamese students including calendar management with Google Classroom integration and task management.',
-    tech: ['JavaScript', 'Chrome APIs', 'Google APIs', 'React'],
-    image: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
-    stats: { users: '5K+', rating: '4.9/5', installs: '10K+' }
+    description: 'Chrome extension for Vietnamese students with AI-powered vocabulary extraction and text summarization. Integrates with Google APIs for seamless document processing and learning enhancement.',
+    tech: ['JavaScript', 'Chrome APIs', 'Google APIs', 'AI/ML'],
+    image: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+    stats: { users: 'Active', features: '5+', rating: 'High' },
+    link: 'https://github.com/dinhnguyenminhhoang'
   },
   {
     id: 6,
-    title: 'Speech-to-Text System',
+    title: 'Speech to Text',
     category: 'AI/ML',
-    description: 'Real-time Vietnamese speech-to-text using Whisper model with accent recognition and API integration.',
-    tech: ['Python', 'Whisper', 'FastAPI', 'WebSocket', 'Docker'],
+    description: 'Real-time Vietnamese speech-to-text system using AI models. Converts spoken Vietnamese to text with high accuracy for accessibility and productivity applications.',
+    tech: ['Python', 'AI/ML', 'Speech Recognition', 'FastAPI'],
+    image: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+    stats: { accuracy: '90%+', languages: '1', speed: 'Real-time' },
+    link: 'https://github.com/dinhnguyenminhhoang'
+  },
+  {
+    id: 7,
+    title: 'Spell Check (LLM)',
+    category: 'AI/ML',
+    description: 'AI-powered Vietnamese spelling and grammar correction tool using Large Language Models. Helps improve writing quality with intelligent suggestions and corrections.',
+    tech: ['Python', 'LLM', 'NLP', 'AI/ML'],
+    image: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
+    stats: { accuracy: '95%+', model: 'LLM', features: '3+' },
+    link: 'https://github.com/dinhnguyenminhhoang'
+  },
+  {
+    id: 8,
+    title: 'Real Estate & E-Learning',
+    category: 'Web Applications',
+    description: 'Portfolio of web applications including Real Estate platform, Google Form clone, and E-Learning Platform with interactive features and modern UI/UX design.',
+    tech: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Database'],
     image: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-    stats: { accuracy: '92%', latency: '<1s', languages: '3' }
+    stats: { projects: '3', stack: 'MERN', features: '30+' },
+    link: 'https://github.com/dinhnguyenminhhoang'
   }
 ]
 
@@ -81,7 +107,7 @@ export default function HorizontalProjects() {
   const scrollToProject = (index: number) => {
     const container = containerRef.current
     if (!container) return
-    
+
     container.scrollTo({
       left: index * container.offsetWidth,
       behavior: 'smooth'
@@ -131,7 +157,7 @@ export default function HorizontalProjects() {
                     <div className="w-full h-full flex items-center justify-center text-white text-6xl font-bold opacity-20 group-hover:opacity-30 transition-opacity">
                       {project.id}
                     </div>
-                    
+
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                       <button className="px-6 py-3 glass rounded-full hover:glow-box transition-all">
@@ -203,11 +229,10 @@ export default function HorizontalProjects() {
           <button
             key={index}
             onClick={() => scrollToProject(index)}
-            className={`h-2 rounded-full transition-all ${
-              activeProject === index 
-                ? 'w-12 bg-gradient-to-r from-primary to-secondary' 
-                : 'w-2 bg-gray-600 hover:bg-gray-500'
-            }`}
+            className={`h-2 rounded-full transition-all ${activeProject === index
+              ? 'w-12 bg-gradient-to-r from-primary to-secondary'
+              : 'w-2 bg-gray-600 hover:bg-gray-500'
+              }`}
             aria-label={`Go to project ${index + 1}`}
           />
         ))}
@@ -217,7 +242,7 @@ export default function HorizontalProjects() {
       {activeProject > 0 && (
         <button
           onClick={() => scrollToProject(activeProject - 1)}
-          className="fixed left-6 top-1/2 -translate-y-1/2 w-12 h-12 glass rounded-full flex items-center justify-center hover:glow-box transition-all z-10"
+          className="absolute left-6 top-1/2 -translate-y-1/2 w-12 h-12 glass rounded-full flex items-center justify-center hover:glow-box transition-all z-10"
           aria-label="Previous project"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -225,11 +250,11 @@ export default function HorizontalProjects() {
           </svg>
         </button>
       )}
-      
+
       {activeProject < projects.length - 1 && (
         <button
           onClick={() => scrollToProject(activeProject + 1)}
-          className="fixed right-6 top-1/2 -translate-y-1/2 w-12 h-12 glass rounded-full flex items-center justify-center hover:glow-box transition-all z-10"
+          className="absolute right-6 top-1/2 -translate-y-1/2 w-12 h-12 glass rounded-full flex items-center justify-center hover:glow-box transition-all z-10"
           aria-label="Next project"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

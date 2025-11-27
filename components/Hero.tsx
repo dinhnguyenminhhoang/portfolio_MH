@@ -7,11 +7,11 @@ export default function Hero() {
   const [textIndex, setTextIndex] = useState(0)
 
   const roles = [
-    'Full-Stack Developer',
+    'Frontend Engineer',
     'React Developer',
+    'Next.js Developer',
     'React Native Developer',
-    'Software Engineering Student',
-    'AI Enthusiast'
+    'UI/UX Enthusiast'
   ]
 
   useEffect(() => {
@@ -91,9 +91,9 @@ export default function Hero() {
         {/* Description */}
         <div className="mb-12 text-reveal">
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Software Engineering student at FPT Can Tho University with hands-on experience
-            in full-stack development. Passionate about building modern web and mobile applications
-            using React, React Native, and Node.js.
+            Frontend Engineer with strong experience in building high-performance, scalable, and responsive
+            applications using React, Next.js, and Vite. Skilled in integrating AI models, optimizing UI performance,
+            and delivering production-quality features across web & mobile platforms.
           </p>
         </div>
 
@@ -129,7 +129,7 @@ export default function Hero() {
           {[
             { icon: '💼', label: 'LinkedIn', href: 'https://www.linkedin.com/in/dinhnguyenminhhoang' },
             { icon: '🐙', label: 'GitHub', href: 'https://github.com/dinhnguyenminhhoang' },
-            { icon: '📧', label: 'Email', href: 'mailto:dinhnguyenminhhoang@gmail.com' },
+            { icon: '📧', label: 'Email', href: 'mailto:minhhoang.detdev@gmail.com' },
           ].map((social) => (
             <a
               key={social.label}
